@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+}
+
+#wrapper_index{   
+    width: 100%;
+    min-height: 150vh;
+    grid-template-columns: 33% 16.5% 16.5% 33%;
+    grid-template-rows: 15vh 20vh 70vh 50vh 15vh;
+    gap: 3px;
+    background-color: black;
+    display: grid;
+    grid-template-areas:
+    'hd hd hd hd'
+    'sc sc sc sc'
+    'a1 a1 a2 a2'
+    'a3 a4 a4 a5'
+    'ft ft ft ft';
+    
+}
+
+header{
+    grid-area: hd;
+    display: flex; /* div, nav{a*3, div, div} */
+
+
+    background-color: aqua;
+}
+
+nav{
+    display: flex;
+}
+
+section{
+    grid-area: sc;
+
+
+    background-color: aquamarine;
+}
+
+article{
+    /*allmänt för alla articles*/
+}
+
+.art1{
+    grid-area: a1;
+
+    background-color: blue;
+}
+
+.art2{
+    grid-area: a2;
+
+    background-color: blue;
+
+}
+
+.art3{
+    grid-area: a3;
+
+    background-color: blue;
+
+}
+
+.art4{
+    grid-area: a4;
+    background-color: blue;
+
+}
+
+.art5{
+    grid-area: a5;
+
+    background-color: blue;
+
+}
+
+footer{
+    grid-area: ft;
+
+    background-color: cornflowerblue;
+}
