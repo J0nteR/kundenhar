@@ -22,14 +22,58 @@ body{
 header{
     grid-area: hd;
     display: flex; /* div, nav{a*3, div, div} */
+    justify-content: space-around;
+    
+    align-items: center;
+
 
 
     background-color: aqua;
 }
 
+/*saker i header nedan ------------------------*/
+.logo{
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+
+/*saker i header ovan ------------------------*/
+
 nav{
     display: flex;
+    justify-content: space-around;
 }
+
+/*saker i nav nedan ------------------------*/
+
+.header_skiing{
+    padding: 10px;
+    background-color: azure;
+}
+
+.header_biking{
+    padding: 10px;
+    background-color: azure;
+}
+
+.header_swimming{
+    padding: 10px;
+    background-color: azure;
+}
+
+.search{
+    padding: 10px;
+    background-color: azure;
+}
+
+.menu{
+    padding: 10px;
+    background-color: azure;
+}
+
+/*saker i nav ovan------------------------*/
+
 
 section{
     grid-area: sc;
