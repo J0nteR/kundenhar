@@ -12,10 +12,10 @@ body{
 #wrapper_index{   
     width: 100%;
     min-height: 150vh;
-    grid-template-columns: 33% 16.5% 16.5% 33%;
+    grid-template-columns: 33% 16.5% 16.5% 1fr;
     grid-template-rows: 15vh 20vh 70vh 50vh 15vh;
-    gap: 4px;
-    background-color: rgb(1245, 245, 245);
+    gap: 5px;
+    background-color: rgb(235, 235, 235);
     display: grid;
     grid-template-areas:
     'hd hd hd hd'
@@ -26,88 +26,118 @@ body{
     
 }
 
-header{
-    grid-area: hd;
-    display: flex; /* div, nav{a*3, div, div} */
-    justify-content: space-around;
-    
-    align-items: center;
-
-
-
-    background-color: rgb(39, 174, 96);
-    border-radius:0 0 10px 10px ;
+#wrapper_trysil{
+    width: 100%;
+    min-height: 150vh;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 15vh 50vh 50vh 15vh;
+    gap: 5px;
+    background-color: rgb(158, 59, 59);
+    display: grid;
+    grid-template-areas:
+    'hd hd'
+    'at dv'
+    's2 s2'
+    'ft ft';
 }
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 5px;
+    font-weight: bold; 
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    margin: 5px;
+    font-weight: bold; 
+    padding: 5px 20px 5px 20px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold; 
+}
+
+.center{
+    text-align: center;
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(39, 174, 96);
+    border-radius: 0 0 10px 10px;
+}
+
 
 /*saker i header nedan ------------------------*/
-.logo{
-    background-color: blanchedalmond;
-    padding: 10px;
+header div a img{
+    width: 100%;
+    align-self: flex-start;
+    height: 10vh;
 }
 
-
+.logo{
+    padding: 10px; 
+}
 nav{
     display: flex;
     justify-content: space-around;
     background-color: white;
     border-radius: 10px;
+    justify-self: center;
 }
-
 nav a{
-    font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 2rem;
     font-weight: bolder;
     text-decoration: none;
     text-transform: capitalize;
-    padding: 1rem;
+    padding: 0.7rem;
 }
-
 nav a:hover{
     color: rgb(125, 133, 130);
 }
-
 /*saker i nav nedan ------------------------*/
-
 .header_skiing{
-    padding: 10px;
-    background-color: azure;
+    padding: px;
 }
-
 .header_biking{
-    padding: 10px;
-    background-color: azure;
+    padding: px;
 }
-
 .header_swimming{
-    padding: 10px;
-    background-color: azure;
+    padding: px;
 }
-
+/*saker i nav ovan------------------------*/
 .search{
     padding: 10px;
-    background-color: azure;
 }
-
 .menu{
     padding: 10px;
-    background-color: azure;
 }
-
-/*saker i nav ovan------------------------*/
-
-
-
+.borderRadius{
+    border-radius: 10px;
+    height: 10vh;
+}
 /*saker i header ovan ------------------------*/
-
-
-
-
 section{
     grid-area: sc;
+    padding: 0.5rem 2rem;
 
-
-    background-color: aquamarine;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 /*saker om articles nedan ------------------------*/
@@ -124,8 +154,10 @@ article{
 }
 
 .article_images{
+    width: 100%;
+    height: 100%;
     border-radius: 10px 10px 0 0;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .white_background{
@@ -138,17 +170,9 @@ article{
     border-radius: 0 0 10px 10px;
 }
 
-h2{
-
-}
-
-h3{
- padding: 5px 20px 5px 20px;
-}
-
-
 .art1{
     grid-area: a1;
+    background-color: blue;
 
 }
 
@@ -185,4 +209,18 @@ footer{
     grid-area: ft;
 
     background-color: cornflowerblue;
+}
+
+
+/* Trysil.html:  */
+.abTrysil{
+    grid-area: at;
+}
+
+.TrysilImgs{
+    grid-area: dv;
+}
+
+.ToDo{
+    grid-area: s2;
 }
