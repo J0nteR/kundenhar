@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/*
+    Color1: rgb(39, 174, 96)
+    Color2: rgb(52, 110, 76)
+*/
+
 body{
     margin: 0;
 }
@@ -7,8 +14,8 @@ body{
     min-height: 150vh;
     grid-template-columns: 33% 16.5% 16.5% 33%;
     grid-template-rows: 15vh 20vh 70vh 50vh 15vh;
-    gap: 3px;
-    background-color: black;
+    gap: 4px;
+    background-color: rgb(1245, 245, 245);
     display: grid;
     grid-template-areas:
     'hd hd hd hd'
@@ -28,7 +35,8 @@ header{
 
 
 
-    background-color: aqua;
+    background-color: rgb(39, 174, 96);
+    border-radius:0 0 10px 10px ;
 }
 
 /*saker i header nedan ------------------------*/
@@ -38,11 +46,25 @@ header{
 }
 
 
-/*saker i header ovan ------------------------*/
-
 nav{
     display: flex;
     justify-content: space-around;
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav a{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+nav a:hover{
+    color: rgb(125, 133, 130);
 }
 
 /*saker i nav nedan ------------------------*/
@@ -73,6 +95,12 @@ nav{
 }
 
 /*saker i nav ovan------------------------*/
+
+
+
+/*saker i header ovan ------------------------*/
+
+
 
 
 section{
