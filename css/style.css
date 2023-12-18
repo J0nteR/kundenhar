@@ -29,22 +29,27 @@ body{
 #wrapper_trysil{
     width: 100%;
     min-height: 130vh;
-    grid-template-columns: 40% 1fr;
-    grid-template-rows: 15vh 50vh 50vh 15vh;
+    grid-template-columns: 1fr 15% 50%;
+    grid-template-rows: 15vh 40vh 10vh 30vh 30vh 15vh;
     gap: 5px;
-    background-color: rgb(158, 59, 59);
+    background-color: rgb(235, 235, 235);
     display: grid;
     grid-template-areas:
-    'hd hd'
-    'at dv'
-    's2 s2'
-    'ft ft';
+    'hd hd hd'
+    'at p1 p1'
+    'to to to'
+    's1 s1 p2'
+    's2 s2 p3'
+    'ft ft ft';
 }
 
 h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 5px;
+    padding: 20px;
+    font-weight: bold; 
+
 }
 
 h2{
@@ -138,7 +143,7 @@ a:hover{
     height: 10vh;
 }
 /*header ^ ------------------------*/
-section{
+#wrapper_index section{
     grid-area: sc;
     padding: 0.5rem 2rem;
 
@@ -219,15 +224,69 @@ a{
 .abTrysil{
     grid-area: at;
     background-color: white;
-    
+    padding: 1.5rem;
+    line-height: 1.8rem;
 
     border-radius: 10px;
 }
 
 .TrysilImgs{
-    grid-area: dv;
+    grid-area: p1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
-.ToDo{
-    grid-area: s2;
+.TrysilImgs img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+#PopToDo{
+    grid-area: to; 
+    text-align: center;  
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.Sec1{
+    grid-area: s1;
+    background-color: white;
+    padding: 1.5rem;
+    line-height: 1.8rem;
+
+    border-radius: 10px;
+}
+
+.Pic2{
+    grid-area: p2;
+}
+
+.ToDoPics{
+    width: 100%;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Sec2{
+    grid-area: s2;
+    background-color: white;
+    padding: 1.5rem;
+    line-height: 1.8rem;
+
+    border-radius: 10px;
+}
+
+.Pic3{
+    grid-area: p3;
+}
+
+
+
+
+
