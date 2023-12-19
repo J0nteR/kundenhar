@@ -24,7 +24,7 @@ body {
     width: 100%;
     min-height: 130vh;
     grid-template-columns: 1fr 15% 50%;
-    grid-template-rows: 15vh 55vh 15vh 30vh 30vh 15vh;
+    grid-template-rows: 15vh 57vh 15vh 30vh 30vh 15vh;
     gap: 5px;
     background-color: rgb(235, 235, 235);
     display: grid;
@@ -112,7 +112,7 @@ nav a {
     font-weight: bolder;
     text-decoration: none;
     text-transform: capitalize;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 a:hover {
