@@ -7,7 +7,7 @@ body {
     width: 100%;
     min-height: 150vh;
     grid-template-columns: 33% 16.5% 16.5% 1fr;
-    grid-template-rows: 15vh 20vh 70vh 55vh 15vh;
+    grid-template-rows: 15vh 20vh 70vh 65vh 15vh;
     gap: 5px;
     background-color: rgb(235, 235, 235);
     display: grid;
@@ -24,7 +24,7 @@ body {
     width: 100%;
     min-height: 130vh;
     grid-template-columns: 1fr 15% 50%;
-    grid-template-rows: 15vh 40vh 10vh 30vh 30vh 15vh;
+    grid-template-rows: 15vh 55vh 15vh 30vh 30vh 15vh;
     gap: 5px;
     background-color: rgb(235, 235, 235);
     display: grid;
